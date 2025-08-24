@@ -1,11 +1,18 @@
 {
   "functions": {
-    "api/*.php": { "runtime": "@vercel/php@2.0.0" }
+    "api/*.php": {
+      "runtime": "php.php"
+    }
   },
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "VERCEL_PHP_VERSION": "8.3"
+    }
+  }
 }
