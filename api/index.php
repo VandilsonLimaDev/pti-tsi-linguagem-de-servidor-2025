@@ -240,7 +240,7 @@
             <input class="input" type="text" name="peso" placeholder="Peso em kg (Ex.: 65.7)" tabindex="1" required <?= !empty($_GET["peso"]) ? 'value="'. $_GET["peso"] .'"' : "";?>>
             <input class="input" style="flex:2" type="text" name="altura" placeholder="Altura em metro (Ex.: 1.75)" tabindex="2" <?= !empty($_GET["altura"]) ? 'value="'. $_GET["altura"] .'"' : "";?> required>
             <input class="btn" type="submit" value="OK" tabindex="3">
-            <?= !empty($_GET["peso"]) ? '<a class="btn btn-reset" href="/" >Reset</a>' : "";?>
+            <?= !empty($_GET["peso"]) ? '<a class="btn btn-reset" href="./" >Reset</a>' : "";?>
         </form>
 
         <?php 
