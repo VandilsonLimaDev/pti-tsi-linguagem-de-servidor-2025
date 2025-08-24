@@ -140,10 +140,6 @@
         form .input::placeholder {
             color: var(--color-secondary);
         }
-        h3 {
-            text-align:center;
-            padding-bottom:2rem;
-        }
         footer {
             border-top: 1px solid var(--color-input);
             color:var(--color-default-2);
@@ -185,6 +181,10 @@
         }
         .subtitle {
             text-align:center;
+        }
+        .subtitle2 {
+            text-align:center;
+            padding-bottom:2rem;
         }
         .linha {
             border-top: 4px solid var(--color-secondary);
@@ -238,7 +238,7 @@
         </header>
         <div class="linha"></div>
        <h1 class="title"><?= "Calculadora de IMC" ?></h1>
-       <h3>Produção Textual Individual - PTI</h3>
+       <h3 class="subtitle2">Produção Textual Individual - PTI</h3>
        <p class="subtitle">Informe seu peso<em>(quilogramas)</em> e altura<em>(metro)</em> para o cálculo</p>
 
         <form action="" method="GET">
