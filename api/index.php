@@ -140,6 +140,10 @@
         form .input::placeholder {
             color: var(--color-secondary);
         }
+        h3 {
+            text-align:center;
+            padding-bottom:2rem;
+        }
         footer {
             border-top: 1px solid var(--color-input);
             color:var(--color-default-2);
@@ -172,7 +176,7 @@
             letter-spacing: -1px;
             font-size:2.2rem;
             text-align:center;
-            padding-block: 1.5rem 1.5rem;
+            padding-block: 1.2rem 0rem ;
         }
         .title-result {
             display:block;
@@ -234,6 +238,7 @@
         </header>
         <div class="linha"></div>
        <h1 class="title"><?= "Calculadora de IMC" ?></h1>
+       <h3>Produção Textual Individual - PTI</h3>
        <p class="subtitle">Informe seu peso<em>(quilogramas)</em> e altura<em>(metro)</em> para o cálculo</p>
 
         <form action="" method="GET">
@@ -257,3 +262,13 @@
 </body>
 </html>
 
+<!--
+/**
+ *      Olá, professor/tutora.
+ *      Além do código-fonte, hospedei a aplicação Calculadora de IMC
+ *      no seguinte endereço, para facilitar a visualização e teste:
+ *      URL: https://pti-tsi-linguagem-de-servidor-2025.vercel.app/
+ *      Qualquer problema de acesso ou dúvida, por favor, me avise.
+ *      Agradeço a atenção.
+ */
+-->
