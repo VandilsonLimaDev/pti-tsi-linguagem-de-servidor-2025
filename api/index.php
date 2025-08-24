@@ -227,7 +227,7 @@
         <header>
             <img src="https://www.ead.senac.br/public/assets/img/logo.png" alt="" />
             <div>
-                <h3>Linguagem de Servidor</h3>
+                <h3>Linguagens de Servidor</h3>
                 <p>Prof. Carlos Henrique Veríssimo Pereira</p>
                 <p>Tutora Profa. Daniela Rosa Ferreira</p>
             </div>
