@@ -120,8 +120,10 @@
             padding-block: 0.5rem 1rem;
         }
         form {
+            margin-block:1rem;
             display:flex;
-            align-items: center;
+            flex-wrap:wrap;
+            flex-direction: column;
             justify-content: space-between;
             gap:.2rem;
         }
@@ -129,7 +131,6 @@
             border-radius:var(--border-radius);
             background-color:var(--color-input);
             border:none;
-            margin-block:.7rem;
             padding:1rem 1rem;
             flex:1;
         }
@@ -157,7 +158,6 @@
             cursor:pointer;
             display:block;
             font-weight:bold;
-            width: 2.8rem;
             height: 2.8rem;
         }
         .btn-reset {
@@ -165,7 +165,7 @@
             align-items: center;
             justify-content: center;
             text-decoration:none;
-            width: 4rem;
+            
         }
         .title {
             color: var(--color-primary);
@@ -203,6 +203,14 @@
             padding-inline: 2.5rem; 
             width: 600px;
         }
+        .container-btns {
+            /* display:flex;
+            flex:1; */
+            /* gap:0.2rem; */
+        }
+        .container-btns * {
+            flex:1;
+        }
         .result {
             border-radius: var(--border-radius);
             display: flex;
@@ -222,6 +230,20 @@
             width: 100px;
         }
 
+        @media screen and (min-width: 600px) {
+            form {
+                display:flex;
+                flex-direction: row;
+                align-items:center;
+            }
+            .btn {
+                padding-inline:0.2rem;
+            }
+            .btn-reset {
+                padding-inline:0.2rem;
+                
+            }
+        }
     </style>
 
 </head>
@@ -243,9 +265,12 @@
 
         <form action="" method="GET">
             <input class="input" type="text" name="peso" placeholder="Peso em kg (Ex.: 65.7)" tabindex="1" required <?= !empty($_GET["peso"]) ? 'value="'. $_GET["peso"] .'"' : "";?>>
-            <input class="input" style="flex:2" type="text" name="altura" placeholder="Altura em metro (Ex.: 1.75)" tabindex="2" <?= !empty($_GET["altura"]) ? 'value="'. $_GET["altura"] .'"' : "";?> required>
-            <input class="btn" type="submit" value="OK" tabindex="3">
-            <?= !empty($_GET["peso"]) ? '<a class="btn btn-reset" href="./" >Reset</a>' : "";?>
+            <input class="input" type="text" name="altura" placeholder="Altura em metro (Ex.: 1.75)" tabindex="2" <?= !empty($_GET["altura"]) ? 'value="'. $_GET["altura"] .'"' : "";?> required>
+            
+                <input class="btn" type="submit" value="OK" tabindex="3">
+                <?= !empty($_GET["peso"]) ? '<a class="btn btn-reset" href="./" tabindex="4">Reset</a>' : "";?>
+            
+            
         </form>
 
         <?php 
