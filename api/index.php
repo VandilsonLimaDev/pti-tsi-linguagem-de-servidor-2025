@@ -234,14 +234,15 @@
             form {
                 display:flex;
                 flex-direction: row;
+                flex-wrap: nowrap;
                 align-items:center;
             }
             .btn {
-                padding-inline:0.2rem;
+                padding-inline:0.7rem;
+
             }
             .btn-reset {
-                padding-inline:0.2rem;
-                
+                padding-inline:0.7rem;
             }
         }
     </style>
